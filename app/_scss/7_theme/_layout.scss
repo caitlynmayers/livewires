@@ -10,10 +10,21 @@ body {
 .reverse {
   @include font-smoothing(on);
   background:$text;
-  color:$background;
+  color:$white;
+
+  p {
+    a {
+      color: $white;
+    }
+  }
 }
 
 // Subtly highlighted section
 .subtle {
   background:$dark-background;
+  color: $white;
+
+  code {
+    color: $text;
+  }
 }
